@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+}
+body {
+    background-color: #0a0a0a;
+    color: lightgray;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* header */
+header a {
+    transition: all .3s linear;
+}
+header a::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 1.5px;
+    background-color: lightgreen;
+    transition: all .3s linear;
+}
+header a:hover {
+    color: lightgreen;
+}
+header a:hover:after {
+    width: 100%;
+}
+
+/* create */
+form {
+    border: 1.5px solid lightgray;
+    max-width: 600px;
+}
+form h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
