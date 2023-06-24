@@ -5,7 +5,12 @@
 {% include 'header.html' %}
 <div class="flex justify-between items-center flex-col w-full p-2">
     <form method="POST" class="flex justify-center items-center p-2 w-full ">
+        {{ csrf_field }}
+        
         <h2>Create New Article</h2>
+        <input type="text" name="title" placeholder="Enter title..." required />
+        <input type="text" name="title" placeholder="Enter title..." required />
+        <textarea name="body" placeholder="Enter body..." required></textarea>
     </form>
 </div>
 {% endblock %}
